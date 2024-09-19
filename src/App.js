@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState(null);
 
   function getData() {
-    axios.get("http://backend-svc0:5000/profile")
+    axios.get("http://backend-svc:5000/profile")
       .then(response => {
         // Kiểm tra dữ liệu nhận được từ backend
         console.log("Received data:", response.data);
